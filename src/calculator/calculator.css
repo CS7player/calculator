@@ -1,0 +1,19 @@
+.btn {
+ padding: 0.5rem 2rem;
+ margin: 0.5rem;
+ font-size: 1.4rem;
+ font-weight: bold;
+ border-radius: 0.2rem;
+}
+
+.ip {
+ width: 70%;
+ margin: 0.2rem;
+ height: 2.4rem;
+ border: 0.2rem solid black;
+ border-radius: 0.2rem;
+ font-size: 1.4rem;
+ font-weight: 900;
+ text-align: center;
+ background: white;
+}
