@@ -27,9 +27,17 @@ export default function Calulator() {
         }
         return Function(`"use strict"; return (${expression});`)();
     }
+    const [isDarkMode, setIsDarkMode] = useState(false);
     return (
-        <div className="container">
-            <h1>Calculator</h1>
+        <div className={`container ${isDarkMode ? 'dark' : 'light'}`}>
+            <p className="black">
+                Calculator
+                <img 
+                    src={isDarkMode ? "moon-regular.svg" : "sun-regular.svg"} 
+                    onClick={() => setIsDarkMode(!isDarkMode)} 
+                    alt={isDarkMode ? "Moon Icon" : "Sun Icon"} 
+                />
+            </p>
             <input className='ip' type="text" value={displayValue}/>
             <button className='btn' onClick={()=>{inputValue('C')}}>C</button>
             <div>
